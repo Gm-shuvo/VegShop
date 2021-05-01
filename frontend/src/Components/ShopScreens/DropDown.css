@@ -1,0 +1,82 @@
+/* Dropdown Button */
+
+.buttonWithIcon{
+    display: flex;
+    align-items: center;
+}
+.buttonWithIcon svg{
+    font-size: 40px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #2f3237;
+    padding: 0px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height:  23px;
+    border: none;
+    width: auto;
+    vertical-align: middle;
+    box-shadow: none;
+    height:40px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #e1e1e1;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position:relative;
+    display:inline-block;
+    border-radius: 4px;
+    border:2px solid #e1e1e1;
+   
+    
+
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f3f3f3;
+    /* min-width: 120px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #2f3237;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content-show a:hover {background-color: rgba(48, 184, 238, 0.925)}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+ .dropdown-content-show {
+   display:block;
+   position: absolute;
+   background-color: #f3f3f3;
+   min-width: 100% ;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+
+}
+
+
+
+
+ @media (max-width: 767px) {
+     .dropdown{
+         text-align: center;
+     }
+ }

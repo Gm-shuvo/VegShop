@@ -1,0 +1,88 @@
+a:hover{
+    text-decoration:none;
+}
+
+.rowProductsContainer{
+ 
+}
+
+.productCardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.productCardContainerHori{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.img-fluid{
+  
+    height: 180px;
+    object-fit: cover;
+}
+
+.productDetailContainer{
+    padding-top: 8px;
+    display:grid;
+    position: relative;
+    text-align: center;
+}
+.starReviewContainer .checked{
+    color:#ffae00;
+}
+.productReviews span{
+   margin: 0 2px;
+   font-size: 14px!important;
+   line-height: 16px;
+}
+
+.starReviewContainer {
+    color: #dfdfdf;
+}
+
+.productName{
+    margin-bottom: 15px;
+    margin: 0 0 10px;
+    padding:0;
+   
+}
+
+
+.productName a{ 
+    font-size: 16px;
+    display: block;
+    overflow: hidden;
+    font-weight:500;
+    font-size:16px;
+    line-height: 24px;
+    color:#2f3237;
+    transition: all 0.35s ease;
+
+}
+
+.proGroup h2{
+    font-size:16px;
+    line-height: 18px;
+   
+
+}
+.proGroup{
+    text-align: center;
+}
+.categroyLink{
+    font-size:12px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(192, 190, 190);
+}
+.productName a:hover{
+    color: #9ac100;
+}
+.categroyLink:hover{
+    color: #9ac100;
+}

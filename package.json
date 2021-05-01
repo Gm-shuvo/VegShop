@@ -1,7 +1,6 @@
 {
   "name": "vegshop",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server",
@@ -22,5 +21,14 @@
   },
   "devDependencies": {
     "concurrently": "^6.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gm-shuvo/VegShop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gm-shuvo/VegShop/issues"
+  },
+  "homepage": "https://github.com/Gm-shuvo/VegShop#readme",
+  "description": ""
 }

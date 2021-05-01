@@ -1,0 +1,186 @@
+.ProListCollectionContainer { 
+    width: 100%;
+}
+
+.proListCollection{
+    
+    width:100%;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 60px;
+  
+
+}
+.fliterCollectFullWidth{
+  display:flex;
+  align-items:center;
+
+}
+
+.fliterCollectFullWidth svg{
+    margin-left: 10px;
+    font-size:24px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.fliterCollectFullWidth svg:last-child{
+    opacity: 0.6;
+}
+   
+
+/* .fliterTag{
+   display:flex;
+    justify-content:center;
+    align-items: center;
+   
+} */
+
+
+
+.filterOptions {
+    display: flex;
+    justify-content:flex-end;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.pageCollectionInner {
+    margin-bottom: 20px !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap !important;
+    margin-left: -15px;
+    margin-right:-15px;
+}
+.row::before{
+    content: "";
+    display: table;
+}
+
+.filterTagFullwidthContent {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    z-index: 900;
+    padding-top: 30px;
+    width: 320px;
+    height: 100vh;
+    background-color: #fff;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-box-shadow: 0 3px 9px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 3px 9px 0 rgb(0 0 0 / 10%);
+    -webkit-transition: all 0.4s cubic-bezier(0.46, 0.01, 0.32, 1);
+    -o-transition: all 0.4s cubic-bezier(0.46, 0.01, 0.32, 1);
+    transition: all 0.4s cubic-bezier(0.46, 0.01, 0.32, 1);
+}
+
+.filterTagFullwidthContent_active{
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    z-index: 900;
+    padding: 30px;
+    width: 320px;
+    height: 100vh;
+    background-color: #fff;
+    overflow-y: auto;
+    filter: alpha(opacity=0);
+    -webkit-box-shadow: 0 3px 9px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 3px 9px 0 rgb(0 0 0 / 10%);
+    -webkit-transition: all 0.4s cubic-bezier(0.46, 0.01, 0.32, 1);
+    -o-transition: all 0.4s cubic-bezier(0.46, 0.01, 0.32, 1);
+    transition: all 0.4s cubic-bezier(0.46, 0.01, 0.32, 1);
+}
+
+.filterTagFullwidthClose{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.filterButtonInFullWidth{
+    display: none;
+}
+
+.proListGrid{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    gap:25px;
+    padding-top: 30px;
+}
+.proListHori{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    gap:25px;
+    padding-top: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+    .filterTagFullwidthContent{
+        box-shadow: none;
+        left: inherit;
+        width: 260px;
+        z-index: 1;
+        visibility: visible;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        overflow-y: inherit;
+        position: relative;
+        height: auto;
+        float: left;
+       
+    }
+    .filterTagFullwidthClose{
+        display: none;
+    }
+
+    
+}
+
+@media only screen and (max-width: 992px){
+    .filterButtonInFullWidth{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        padding-right: 20px;
+        cursor: pointer;
+        color: #9AC100;
+       
+    }
+    .filterButtonInFullWidth svg,h2{
+        font-size:20px;
+        font-weight: 400;
+        line-height:20px;
+        margin-left: 10px;
+    }
+
+    
+   
+
+}
+
+@media (min-width: 768px){
+    .ProListCollectionContainer{
+        width:100%;
+        float: left;
+    }
+}
