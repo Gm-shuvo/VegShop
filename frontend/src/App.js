@@ -4,15 +4,17 @@ import "./App.css";
 import "./bootstrap.min.css";
 import Header from "./Components/Header/Header";
 import HomeScreen from "./screens/HomeScreen";
+import ShopScreen from "./screens/ShopScreen";
 
 function App() {
   return (
     <div className="App">
       <p>dihan abir</p>
-      <Header></Header>
+      <Header/>
       <main className="container">
         <Router>
-          <Route to="/" exact component={HomeScreen}></Route>
+          <Route to="/" exact component={HomeScreen}/>
+          <Route to='/all_products' exact component= {ShopScreen}/>
         </Router>
       </main>
     </div>
